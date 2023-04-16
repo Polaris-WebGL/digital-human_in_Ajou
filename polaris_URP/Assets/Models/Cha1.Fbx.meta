@@ -8,117 +8,117 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Camisole_Pbr
-    second: {fileID: 2100000, guid: 628782888281bb84b82bba14316143dd, type: 2}
+    second: {fileID: 2100000, guid: f7008a9ad783e3f45b628529e66bf148, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Hair_Transparency_0_Pbr
-    second: {fileID: 2100000, guid: 276a1b867884e5c49a36d132b6c5719a, type: 2}
+    second: {fileID: 2100000, guid: ee946762ee4949248bc3a5a1110ce7bc, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Hair_Transparency_Pbr
-    second: {fileID: 2100000, guid: 37796153f0d077d458a0df71dac70ecb, type: 2}
+    second: {fileID: 2100000, guid: f9ccfa89d28a24c4d90bc5ecaf4ef6b9, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Hairline_Transparency_Pbr
-    second: {fileID: 2100000, guid: 8465ed94bd3da0349afb9e4b40aa7399, type: 2}
+    second: {fileID: 2100000, guid: 1796504c8bb982f47b929e7e41dbd683, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Rocker_Jeans_Pbr
-    second: {fileID: 2100000, guid: 7e5d34f0b99da644ea840a775678c919, type: 2}
+    second: {fileID: 2100000, guid: 9c6e2768ced643a4ca00c3cfe6ba8968, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Std_Cornea_L_Pbr
-    second: {fileID: 2100000, guid: bef1e144656156043a8e357887d84809, type: 2}
+    second: {fileID: 2100000, guid: 2da85e4c5ccaca84d8aaeb542f115573, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Std_Cornea_R_Pbr
-    second: {fileID: 2100000, guid: 492567f44b29e2a4c93963eda07e943e, type: 2}
+    second: {fileID: 2100000, guid: 5452dfcb9a598694c86097ae48424b67, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Std_Eye_L_Pbr
-    second: {fileID: 2100000, guid: d4cd66426726db342978a32cfab745d4, type: 2}
+    second: {fileID: 2100000, guid: f26095d0183a55c40a59d9fa1c809a67, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Std_Eye_Occlusion_L_Pbr
-    second: {fileID: 2100000, guid: 0951565a9c2519a47bff5018334dd735, type: 2}
+    second: {fileID: 2100000, guid: f3140cdb2f291fe448e9f292731aca9d, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Std_Eye_Occlusion_R_Pbr
-    second: {fileID: 2100000, guid: 1796a949e32e9144cbde2bf4131610e9, type: 2}
+    second: {fileID: 2100000, guid: 817d4bc074c6e4b4e87dc770bb2c7c4f, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Std_Eye_R_Pbr
-    second: {fileID: 2100000, guid: 23fa424e268832c48990c48ca9809a28, type: 2}
+    second: {fileID: 2100000, guid: a43d1d80c7b08ed4ebb40c84aa4cd25b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Std_Eyelash_Pbr
-    second: {fileID: 2100000, guid: b82f20405dea40449a280581399a938a, type: 2}
+    second: {fileID: 2100000, guid: 1b5e42ce98abb6341829d42cd7eda6c1, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Std_Lower_Teeth_Pbr
-    second: {fileID: 2100000, guid: bea82a0ece2a87d4eaaf6ba0356fcda0, type: 2}
+    second: {fileID: 2100000, guid: da556001f4471e94ca89a822e7548efe, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Std_Nails_Pbr
-    second: {fileID: 2100000, guid: 766576274a61f3946b2b4f0942b6012f, type: 2}
+    second: {fileID: 2100000, guid: 055e6fc8d686e764fbb9bf873b5eabda, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Std_Skin_Arm_Pbr
-    second: {fileID: 2100000, guid: a8bd996a003447147856b62abe175f39, type: 2}
+    second: {fileID: 2100000, guid: 60c0c7221e8fdbe48a6379d05edcf22a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Std_Skin_Body_Pbr
-    second: {fileID: 2100000, guid: d5b2e81c8d0edf74a94d74454712730a, type: 2}
+    second: {fileID: 2100000, guid: 7b9414bc85c0a994da5f2edcc7ce4f37, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Std_Skin_Head_Pbr
-    second: {fileID: 2100000, guid: 35dded30597c17f48871a853c4cec255, type: 2}
+    second: {fileID: 2100000, guid: fd65ec3aaecd3aa4f9e264629ba7252e, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Std_Skin_Leg_Pbr
-    second: {fileID: 2100000, guid: 0999b082bbf52a240a06a9c8d92aafde, type: 2}
+    second: {fileID: 2100000, guid: 6fb950c81cb2f1f41b2dde43c2e12b51, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Std_Tearline_L_Pbr
-    second: {fileID: 2100000, guid: d1d852485c616a54daf28f6650f02413, type: 2}
+    second: {fileID: 2100000, guid: cc6bfa80bbebc7042ac80613ac6001e2, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Std_Tearline_R_Pbr
-    second: {fileID: 2100000, guid: 180460c1da2cdf14bb3e842f906dc145, type: 2}
+    second: {fileID: 2100000, guid: 4be50801c92ac4c44a6ef90dd95721b6, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Std_Tongue_Pbr
-    second: {fileID: 2100000, guid: 19186600f7a349442b6c35f40d543b4b, type: 2}
+    second: {fileID: 2100000, guid: 8036ccce009de6a4c89a10e26c80a4ff, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Std_Upper_Teeth_Pbr
-    second: {fileID: 2100000, guid: bc1290475dc360a4fab9849a9c16221f, type: 2}
+    second: {fileID: 2100000, guid: 66e2de2298461c9488d758e823db8804, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Underwear_Bottoms_Pbr
-    second: {fileID: 2100000, guid: e55f4a7e1ce4e034893d02c5ae7e3f2f, type: 2}
+    second: {fileID: 2100000, guid: c171d055ba9004f4c88304a03c103905, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -134,7 +134,9 @@ ModelImporter:
     rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
-    animationImportWarnings: 
+    animationImportWarnings: "\nClip 'Calibration' has import animation warnings
+      that might lower retargeting quality:\n\t'CC_Base_NeckTwist02' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
