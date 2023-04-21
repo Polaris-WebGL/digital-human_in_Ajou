@@ -9,4 +9,6 @@ public class Change : MonoBehaviour
     {
         SceneManager.LoadScene("Room");
     }
+    
+    
 }

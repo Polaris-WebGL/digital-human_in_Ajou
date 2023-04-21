@@ -32,13 +32,13 @@ public class ClickEvent : MonoBehaviour
                 Application.OpenURL("https://50.ajou.ac.kr/");
             }
 
-            if (hit.collider.name == "map1")
+            else if (hit.collider.name == "map1")
             {
                 Debug.Log("map Hit");
                 Application.OpenURL("https://www.ajou.ac.kr/kr/ajou/notice.do");
             }
 
-            if (hit.collider.name == "card1")
+            else if (hit.collider.name == "card1")
             {
                 Debug.Log("card Hit");
                 Application.OpenURL("https://www.ajou.ac.kr/kr/ajou/notice.do");
