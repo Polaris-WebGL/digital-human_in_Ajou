@@ -1,32 +1,46 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using UnityEngine;
+using Vector3 = UnityEngine.Vector3;
 
 public class ClickEvent : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private bool mousePressed;
+    private Vector3 mousePosition;
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButton(0)) // 클릭한 경우
         {
-            if (gameObject.CompareTag("Device"))
+            mousePressed = Input.GetMouseButton(0);
+            mousePosition = Input.mousePosition;
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        Ray ray = UnityEngine.Camera.main.ScreenPointToRay(mousePosition);
+        RaycastHit hit;
+
+        if (mousePressed && Physics.Raycast(ray, out hit))
+        {
+            if (hit.collider.name == "switch2")
             {
+                Debug.Log("switch Hit");
                 Application.OpenURL("https://50.ajou.ac.kr/");
             }
 
-            if (gameObject.CompareTag("Map"))
+            if (hit.collider.name == "map1")
             {
+                Debug.Log("map Hit");
                 Application.OpenURL("https://www.ajou.ac.kr/kr/ajou/notice.do");
             }
 
-            if (gameObject.CompareTag("Photo"))
+            if (hit.collider.name == "card1")
             {
+                Debug.Log("card Hit");
                 Application.OpenURL("https://www.ajou.ac.kr/kr/ajou/notice.do");
             }
         }
