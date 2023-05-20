@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine.EventSystems;
 using UnityEngine;
 
@@ -11,6 +12,7 @@ public class Camera : MonoBehaviour
 	public Texture2D Arrow_Left;
 	public Texture2D Arrow_Right;
 	public int ArrowSize = 50;
+
 	void Start()
 	{
         

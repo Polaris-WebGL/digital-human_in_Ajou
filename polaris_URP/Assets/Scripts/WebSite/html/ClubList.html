@@ -16,29 +16,147 @@
         
         <div class="type">
             <text>동아리 유형</text>
-            <img src="../img/search.png" alt="검색창">
-            
+            <select name="type" id="type">
+                <option value="전체">전 체</option>
+                <option value="태권도">태권도</option>
+                <option value="농구">농구</option>
+                <option value="마술">마술</option>
+                <option value="더빙">더빙</option>
+                <option value="연극">연극</option>
+                <option value="야구">야구</option>
+                <option value="봉사">봉사</option>
+                <option value="밴드">밴드</option>
+                <option value="스트릿댄스">스트릿댄스</option>
+            </select>
         </div>
         
         <div class="week">
+            <text>활동 요일</text>
+            
+            <input type="checkbox" id="전체" name="week" value="전체" checked="checked">
+            <label for="전체">전 체</label>
+            <input type="checkbox" id="월요일" name="week" value="월요일">
+            <label for="월요일">월요일</label>
+            <input type="checkbox" id="화요일" name="week" value="화요일">
+            <label for="화요일">화요일</label>
+            <input type="checkbox" id="수요일" name="week" value="수요일">
+            <label for="수요일">수요일</label>
+            <input type="checkbox" id="목요일" name="week" value="목요일">
+            <label for="목요일">목요일</label>
+            <input type="checkbox" id="금요일" name="week" value="금요일">
+            <label for="금요일">금요일</label>
+            <input type="checkbox" id="토요일" name="week" value="토요일">
+            <label for="토요일">토요일</label>
+            <input type="checkbox" id="일요일" name="week" value="일요일">
+            <label for="일요일">일요일</label>
+            <input type="checkbox" id="자유" name="week" value="자유">
+            <label for="자유">자유</label>
+
+            <div class="search">
+                <input type="submit" id="검색" value="검색" name="search" onclick="return checkbox()">
+                <label for="검색">
+                    <img src="../img/search.png" width="40" alt="검색">
+                </label>
+            </div>
             
         </div>
+        <div class="description">
+            <text>*23-1 기준 활동 요일입니다.</text>
+        </div>
         
-        <div class="content">
-            <!--양 옆에 화살표 아이콘-->
+        <div class="contentWrap">
+       
+            <div id="result" class="section">
+                
+                <div class="slideWrap">
+                    <ul class="slideList">
+                        <li>
+                            <a>
+                                <label for="slide01" class="left"></label>
+                                <div class="club_content" style="display: flex;">
+                                    <div class="club" id="club1" style="display: table-column;">
+                                        <img src="../img/test_img.png" alt="사진1">
+                                        <p>동아리 소개 글</p>
+                                        <text>동아리명</text>
+                                        <div class="content" style="display: flex;">
+                                            <div class="label">활동 내용</div>
+                                            <p>활동 내용입니다.</p>
+                                        </div>
+                                        <div class="week" style="display: flex;">
+                                            <div class="label">활동 요일</div>
+                                            <p>활동 요일입니다.</p>
+                                        </div>
+                                        <div class="sns" style="display: flex;">
+                                            <div class="label">SNS</div>
+                                            <img src="../img/instagram.png" alt="instagram">
+                                            <p>@계정명</p>
+                                        </div>
+                                    </div>
+                                    <div class="club" id="club2" style="display: table-column;">
+                                        <img src="../img/test_img.png" alt="사진1">
+                                        <p>동아리 소개 글</p>
+                                        <text>동아리명</text>
+                                        <div class="content" style="display: flex;">
+                                            <div class="label">활동 내용</div>
+                                            <p>활동 내용입니다.</p>
+                                        </div>
+                                        <div class="week" style="display: flex;">
+                                            <div class="label">활동 요일</div>
+                                            <p>활동 요일입니다.</p>
+                                        </div>
+                                        <div class="sns" style="display: flex;">
+                                            <div class="label">SNS</div>
+                                            <img src="../img/instagram.png" alt="instagram">
+                                            <p>@계정명</p>
+                                        </div>
+                                    </div>
+                                    <div class="club" id="club3" style="display: table-column;">
+                                        <img src="../img/test_img.png" alt="사진1">
+                                        <p>동아리 소개 글</p>
+                                        <text>동아리명</text>
+                                        <div class="content" style="display: flex;">
+                                            <div class="label">활동 내용</div>
+                                            <p>활동 내용입니다.</p>
+                                        </div>
+                                        <div class="week" style="display: flex;">
+                                            <div class="label">활동 요일</div>
+                                            <p>활동 요일입니다.</p>
+                                        </div>
+                                        <div class="sns" style="display: flex;">
+                                            <div class="label">SNS</div>
+                                            <img src="../img/instagram.png" alt="instagram">
+                                            <p>@계정명</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <label for="slide02" class="right"></label>
+                            </a>
+                        </li>
+                        <li>
+                            <label for="slide01" class="left"></label>
+                            <div style="display: flex;">
+                                <text>동아리4 자리</text>
+                                <text>동아리5 자리</text>
+                                <text>동아리6 자리</text>
+                            </div>
+                            <label for="slide03" class="right"></label>
+                        </li>
+                        <li>
+                            <label for="slide02" class="left"></label>
+                            <div style="display: flex;">
+                                <text>동아리7 자리</text>
+                                <text>동아리8 자리</text>
+                                <text>동아리9 자리</text>
+                            </div>
+                            <label for="slide03" class="right"></label>
+                        </li>
+                    </ul>
+                </div>
+                <input type="radio" name="slide" id="slide01">
+                <input type="radio" name="slide" id="slide02">
+                <input type="radio" name="slide" id="slide03">
+            </div>
             
-            <!--각 동아리(3개씩)-->
-                <!--사진-->
-                <!--동아리소개명-->
-                <!--동아리명-->
-                <!--활동content-->
-                    <!--활동 내용-->
-                        <!--UI-->
-                        <!--내용-->
-                    <!--활동 요일-->
-                        <!--UI-->
-                        <!--내용-->
-                    <!--SNS-->
         </div>
     </div>
 
