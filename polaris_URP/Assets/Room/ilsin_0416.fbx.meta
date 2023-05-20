@@ -3,7 +3,112 @@ guid: 21c2cd5135b80f44685a6aff5f083d40
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bed2_black
+    second: {fileID: 2100000, guid: bda3d2f6696d3ee4e853335e054954e0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bed2_gray
+    second: {fileID: 2100000, guid: 8b19def5c81579140902092dfa7b3df5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: card
+    second: {fileID: 2100000, guid: 7dc2cf410baadc441955792e451a88f3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: desk0416_mattress
+    second: {fileID: 2100000, guid: f8c59a4f187c44949996b12ec6a9803e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: desk0416_wood
+    second: {fileID: 2100000, guid: fabeaa96101a89a4393e28d221b55728, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: floor
+    second: {fileID: 2100000, guid: 4fb9ab6c8f112c94c9ecf5a65c89e99d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass
+    second: {fileID: 2100000, guid: b03715db015aa4d478c3999f3bc495de, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 66ee46d673960204688fb11073cfb1e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert19
+    second: {fileID: 2100000, guid: dd1410e47bf2d6c4db82458f4ddfd7b2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert20
+    second: {fileID: 2100000, guid: be10eaa82400acb4b99a006c435adb57, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: map
+    second: {fileID: 2100000, guid: e27660750668c434a93616431f420ac3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal
+    second: {fileID: 2100000, guid: 3691605181f468745921a150e0022848, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: screen
+    second: {fileID: 2100000, guid: 51ac00fc7b09dc445921f1f8626163cb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sw_bk
+    second: {fileID: 2100000, guid: ae801684953d08a4da576c29cdbdf7f5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wall
+    second: {fileID: 2100000, guid: 0a2ad6a2b1839f345831996b7dd81133, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: white
+    second: {fileID: 2100000, guid: 4881673f337487a429ceb56f6cc12ac8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: window1
+    second: {fileID: 2100000, guid: 5ec7a0b7feea24f4680280386c6ddbf9, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: floor
+    second: {fileID: 2800000, guid: 5aa3f8da5d3fd9c42ba59c424f60e65d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wood
+    second: {fileID: 2800000, guid: 4e8ae3b39629f9541bd755651d4c1977, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\uB300\uC9C0 1"
+    second: {fileID: 2800000, guid: 090e2b58ab5f5a34599e2d2f3242787c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\uC9C0\uB3C4"
+    second: {fileID: 2800000, guid: c0502926533bc36428c35f0552e00a57, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
