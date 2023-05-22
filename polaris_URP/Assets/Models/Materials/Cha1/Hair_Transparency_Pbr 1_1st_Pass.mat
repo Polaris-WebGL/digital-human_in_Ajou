@@ -121,6 +121,6 @@ Material:
     - _HighlightBColor: {r: 0.8160401, g: 0.62541395, b: 0.5142316, a: 1}
     - _HighlightBDistribution: {r: 0.6391001, g: 0.80600005, b: 0.94960004, a: 0}
     - _RootColor: {r: 0.40066284, g: 0.2863614, b: 0.25026038, a: 1}
-    - _SpecularTint: {r: 1, g: 0.9151493, b: 0.8746182, a: 1}
+    - _SpecularTint: {r: 1, g: 1, b: 1, a: 1}
     - _VertexBaseColor: {r: 0.2297351, g: 0.1318038, b: 0.049840096, a: 1}
   m_BuildTextureStacks: []
