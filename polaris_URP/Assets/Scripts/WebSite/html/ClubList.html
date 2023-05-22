@@ -16,7 +16,7 @@
         
         <div class="type">
             <text>동아리 유형</text>
-            <select name="type" id="type">
+            <select name="type" id="type" type="select">
                 <option value="전체">전 체</option>
                 <option value="태권도">태권도</option>
                 <option value="농구">농구</option>
@@ -73,81 +73,48 @@
                         <li>
                             <a>
                                 <label for="slide01" class="left"></label>
-                                <div class="club_content" style="display: flex;">
-                                    <div class="club" id="club1" style="display: table-column;">
-                                        <img src="../img/test_img.png" alt="사진1">
-                                        <p>동아리 소개 글</p>
-                                        <text>동아리명</text>
-                                        <div class="content" style="display: flex;">
-                                            <div class="label">활동 내용</div>
-                                            <p>활동 내용입니다.</p>
-                                        </div>
-                                        <div class="week" style="display: flex;">
-                                            <div class="label">활동 요일</div>
-                                            <p>활동 요일입니다.</p>
-                                        </div>
-                                        <div class="sns" style="display: flex;">
-                                            <div class="label">SNS</div>
-                                            <img src="../img/instagram.png" alt="instagram">
-                                            <p>@계정명</p>
-                                        </div>
-                                    </div>
-                                    <div class="club" id="club2" style="display: table-column;">
-                                        <img src="../img/test_img.png" alt="사진1">
-                                        <p>동아리 소개 글</p>
-                                        <text>동아리명</text>
-                                        <div class="content" style="display: flex;">
-                                            <div class="label">활동 내용</div>
-                                            <p>활동 내용입니다.</p>
-                                        </div>
-                                        <div class="week" style="display: flex;">
-                                            <div class="label">활동 요일</div>
-                                            <p>활동 요일입니다.</p>
-                                        </div>
-                                        <div class="sns" style="display: flex;">
-                                            <div class="label">SNS</div>
-                                            <img src="../img/instagram.png" alt="instagram">
-                                            <p>@계정명</p>
-                                        </div>
-                                    </div>
-                                    <div class="club" id="club3" style="display: table-column;">
-                                        <img src="../img/test_img.png" alt="사진1">
-                                        <p>동아리 소개 글</p>
-                                        <text>동아리명</text>
-                                        <div class="content" style="display: flex;">
-                                            <div class="label">활동 내용</div>
-                                            <p>활동 내용입니다.</p>
-                                        </div>
-                                        <div class="week" style="display: flex;">
-                                            <div class="label">활동 요일</div>
-                                            <p>활동 요일입니다.</p>
-                                        </div>
-                                        <div class="sns" style="display: flex;">
-                                            <div class="label">SNS</div>
-                                            <img src="../img/instagram.png" alt="instagram">
-                                            <p>@계정명</p>
-                                        </div>
-                                    </div>
-                                </div>
+                                <table class="club_content" style="display: flex;">
+                                    <tr class="club" id="club1" style="display: table-column;">
+                                        <div data-include-path="ClubInfo.html"></div>
+                                    </tr>
+                                    <tr class="club" id="club2" style="display: table-column;">
+                                        <div data-include-path="ClubInfo.html"></div>
+                                    </tr>
+                                    <tr class="club" id="club3" style="display: table-column;">
+                                        <div data-include-path="ClubInfo.html"></div>
+                                    </tr>
+                                </table>
                                 <label for="slide02" class="right"></label>
                             </a>
                         </li>
                         <li>
                             <label for="slide01" class="left"></label>
-                            <div style="display: flex;">
-                                <text>동아리4 자리</text>
-                                <text>동아리5 자리</text>
-                                <text>동아리6 자리</text>
-                            </div>
+                            <table style="display: flex;">
+                                <tr class="club" id="club4" style="display: table-column;">
+                                    <div data-include-path="ClubInfo.html"></div>
+                                </tr>
+                                <tr class="club" id="club5" style="display: table-column;">
+                                    <div data-include-path="ClubInfo.html"></div>
+                                </tr>
+                                <tr class="club" id="club6" style="display: table-column;">
+                                    <div data-include-path="ClubInfo.html"></div>
+                                </tr>
+                            </table>
                             <label for="slide03" class="right"></label>
                         </li>
                         <li>
                             <label for="slide02" class="left"></label>
-                            <div style="display: flex;">
-                                <text>동아리7 자리</text>
-                                <text>동아리8 자리</text>
-                                <text>동아리9 자리</text>
-                            </div>
+                            <table style="display: flex;">
+                                <tr class="club" id="club7" style="display: table-column;">
+                                    <div data-include-path="ClubInfo.html"></div>
+                                </tr>
+                                <tr class="club" id="club8" style="display: table-column;">
+                                    <div data-include-path="ClubInfo.html"></div>
+                                </tr>
+                                <tr class="club" id="club9" style="display: table-column;">
+                                    <div data-include-path="ClubInfo.html"></div>
+                                </tr>
+                            </table>
                             <label for="slide03" class="right"></label>
                         </li>
                     </ul>
@@ -161,6 +128,24 @@
     </div>
 
     <script type="text/javascript" src="../js/ClubList.js"></script>
+    <script>
+        window.addEventListener('load', function() {
+            var allElements = document.getElementsByTagName('*');
+            Array.prototype.forEach.call(allElements, function(el) {
+                var includePath = el.dataset.includePath;
+                if (includePath) {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4 && this.status == 200) {
+                            el.outerHTML = this.responseText;
+                        }
+                    };
+                    xhttp.open('GET', includePath, true);
+                    xhttp.send();
+                }
+            });
+        });
+    </script>
 
 </body>
 </html>

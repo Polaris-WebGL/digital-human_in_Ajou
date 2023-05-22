@@ -30,54 +30,58 @@ public class ClickEvent : MonoBehaviour
         Ray ray = UnityEngine.Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
 
-        if (mousePressed && Physics.Raycast(ray, out hit))
+        if (mousePressed && Physics.Raycast(ray, out hit, 300))
         {
-            if (hit.transform.name == "polySurface29" || hit.transform.name == "polySurface31" || hit.transform.name == "polySurface32" || hit.transform.name == "polySurface33")
+            if (hit.collider.name != null)
             {
-                Debug.Log("desk Hit");
+                            if (hit.transform.name == "polySurface29" || hit.transform.name == "polySurface31" || hit.transform.name == "polySurface32" || hit.transform.name == "polySurface33")
+                            {
+                                Debug.Log("desk Hit");
+                                
+                                //책상 뷰로 전환
+                                mainCamera.enabled = false;
+                                overCamera.enabled = true;
+                                BackUI.SetActive(true);
+                                MenuUI.SetActive(false);
+                                
+                                if (hit.collider.name == "switch1")
+                                {
+                                    Debug.Log("switch Hit");
+                                    Application.OpenURL("https://50.ajou.ac.kr/");
+                                }
                 
-                //책상 뷰로 전환
-                mainCamera.enabled = false;
-                overCamera.enabled = true;
-                BackUI.SetActive(true);
-                MenuUI.SetActive(false);
+                                else if (hit.collider.name == "map")
+                                {
+                                    Debug.Log("map Hit");
+                                    Application.OpenURL("https://www.ajou.ac.kr/kr/ajou/notice.do");
+                                }
                 
-                if (hit.transform.name == "switch1")
-                {
-                    Debug.Log("switch Hit");
-                    Application.OpenURL("https://50.ajou.ac.kr/");
-                }
-
-                else if (hit.transform.name == "map")
-                {
-                    Debug.Log("map Hit");
-                    Application.OpenURL("https://www.ajou.ac.kr/kr/ajou/notice.do");
-                }
-
-                else if (hit.transform.name == "card1")
-                {
-                    Debug.Log("card Hit");
-                    Application.OpenURL("https://www.ajou.ac.kr/kr/ajou/notice.do");
-                }
-            
-                else if (hit.transform.name == "apply1")
-                {
-                    Debug.Log("apply Hit");
-                    Application.OpenURL("./WebSite/ClubList.html");
-                }
-            
-                else if (hit.transform.name == "pamphlet1")
-                {
-                    Debug.Log("pamphlet Hit");
-                
-                }
-                
-                else if (hit.transform.name == "pCube30")
-                {
-                    Debug.Log("photo Hit");
-                
-                }
+                                else if (hit.collider.name == "card1")
+                                {
+                                    Debug.Log("card Hit");
+                                    Application.OpenURL("https://www.ajou.ac.kr/kr/ajou/notice.do");
+                                }
+                            
+                                else if (hit.collider.name == "apply1")
+                                {
+                                    Debug.Log("apply Hit");
+                                    Application.OpenURL("./WebSite/ClubList.html");
+                                }
+                            
+                                else if (hit.collider.name == "pamphlet1")
+                                {
+                                    Debug.Log("pamphlet Hit");
+                                
+                                }
+                                
+                                else if (hit.collider.name == "pCube30")
+                                {
+                                    Debug.Log("photo Hit");
+                                
+                                }
+                            }
             }
+
         }
     }
 

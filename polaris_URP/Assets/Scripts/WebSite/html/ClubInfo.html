@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/ClubList.css">
 </head>
 <body>
-$END$
+    <div>
+        <img id="club_img" alt="사진">
+        <p id="club_intro"></p>
+        <text id="club_name"></text>
+        <div class="content" style="display: flex;">
+            <div class="label">활동 내용</div>
+            <p id="club_activity"></p>
+        </div>
+        <div class="week" style="display: flex;">
+            <div class="label">활동 요일</div>
+            <p id="club_week"></p>
+        </div>
+        <div class="sns" style="display: flex;">
+            <div class="label">SNS</div>
+            <img src="../img/instagram.png" alt="instagram">
+            <p id="club_sns_link"></p>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../js/ClubList.js"></script>
 </body>
 </html>
