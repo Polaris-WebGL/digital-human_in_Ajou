@@ -14,8 +14,7 @@ public class ClickEvent : MonoBehaviour
     private Vector3 mousePosition;
     public Camera mainCamera;
     public Camera overCamera;
-    public GameObject BackUI;
-    public GameObject MenuUI;
+    public Camera avatarCamera;
     
     void Update()
     {
@@ -41,8 +40,8 @@ public class ClickEvent : MonoBehaviour
                                 //책상 뷰로 전환
                                 mainCamera.enabled = false;
                                 overCamera.enabled = true;
-                                BackUI.SetActive(true);
-                                MenuUI.SetActive(false);
+                                //BackUI.SetActive(true);
+                                //MenuUI.SetActive(false);
                                 
                                 if (hit.collider.name == "switch1")
                                 {
@@ -80,6 +79,18 @@ public class ClickEvent : MonoBehaviour
                                 
                                 }
                             }
+                            if (hit.transform.name == "test77")
+                            {
+                                Debug.Log("avatar Hit");
+                                
+                                //아바타 뷰로 전환
+                                mainCamera.enabled = false;
+                                overCamera.enabled = false;
+                                //avatarCamera.enabled = false;
+                                //BackUI.SetActive(true);
+                                //MenuUI.SetActive(false);
+                                
+                            }
             }
 
         }
@@ -92,7 +103,7 @@ public class ClickEvent : MonoBehaviour
         overCamera.enabled = false;
         
         SceneManager.LoadScene("Room");
-        MenuUI.SetActive(true);
+        //MenuUI.SetActive(true);
     }
 
     public void OnClickMenu()

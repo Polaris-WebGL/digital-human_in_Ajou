@@ -7,6 +7,8 @@ TagManager:
   - Device
   - Map
   - Photo
+  - Card
+  - Desk
   layers:
   - Default
   - TransparentFX
@@ -14,8 +16,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Human
+  - Window
   - 
   - 
   - 

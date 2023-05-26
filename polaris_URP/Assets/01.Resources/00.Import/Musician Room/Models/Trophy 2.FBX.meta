@@ -1,0 +1,174 @@
+fileFormatVersion: 2
+guid: 2eb6ffbfcfe92e249ac2cb2195efd536
+timeCreated: 1515149437
+licenseType: Store
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Action Recovery
+    100002: Birth 001
+    100004: Birth 002
+    100006: Birth 003
+    100008: Birth 004
+    100010: Display 001
+    100012: Display 002
+    100014: Display 003
+    100016: Display 004
+    100018: Display 005
+    100020: Event 001
+    100022: Event 002
+    100024: Event 003
+    100026: Event 004
+    100028: Force 001
+    100030: Force 002
+    100032: Force 003
+    100034: Force 004
+    100036: Particle View 01
+    100038: Position Icon 001
+    100040: Position Icon 002
+    100042: Position Object 001
+    100044: Position Object 002
+    100046: Render 001
+    100048: Render 002
+    100050: Render 003
+    100052: Render 004
+    100054: Rotation 001
+    100056: Rotation 002
+    100058: Rotation 003
+    100060: Rotation 004
+    100062: Shape Instance 001
+    100064: Shape Instance 002
+    100066: Shape Instance 003
+    100068: Shape Instance 004
+    100070: //RootNode
+    100072: trophy 2
+    400000: Action Recovery
+    400002: Birth 001
+    400004: Birth 002
+    400006: Birth 003
+    400008: Birth 004
+    400010: Display 001
+    400012: Display 002
+    400014: Display 003
+    400016: Display 004
+    400018: Display 005
+    400020: Event 001
+    400022: Event 002
+    400024: Event 003
+    400026: Event 004
+    400028: Force 001
+    400030: Force 002
+    400032: Force 003
+    400034: Force 004
+    400036: Particle View 01
+    400038: Position Icon 001
+    400040: Position Icon 002
+    400042: Position Object 001
+    400044: Position Object 002
+    400046: Render 001
+    400048: Render 002
+    400050: Render 003
+    400052: Render 004
+    400054: Rotation 001
+    400056: Rotation 002
+    400058: Rotation 003
+    400060: Rotation 004
+    400062: Shape Instance 001
+    400064: Shape Instance 002
+    400066: Shape Instance 003
+    400068: Shape Instance 004
+    400070: //RootNode
+    400072: trophy 2
+    2300000: trophy 2
+    2300002: //RootNode
+    3300000: trophy 2
+    3300002: //RootNode
+    4300000: trophy 2
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #0'
+    second: {fileID: 2100000, guid: 3beb92e25bf7aa74099b7f5b092c3d74, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #12'
+    second: {fileID: 2100000, guid: 7377343c436886342a6e43303d328f4f, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
