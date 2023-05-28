@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class animationControl : MonoBehaviour
+public class animationControl_man : MonoBehaviour
 {
     AudioSource audioData;
     Animator m_Animator;
@@ -19,8 +19,8 @@ public class animationControl : MonoBehaviour
     }
     void OnInvoke()
     {
-        Debug.Log("11ÃÊ ÈÄ Ivoke ¹ßµ¿");
-        SceneManager.LoadScene("Room");
+        Debug.Log("11ï¿½ï¿½ ï¿½ï¿½ Ivoke ï¿½ßµï¿½");
+        SceneManager.LoadScene("Room_Garam");
     }
     void playAudio()
     {

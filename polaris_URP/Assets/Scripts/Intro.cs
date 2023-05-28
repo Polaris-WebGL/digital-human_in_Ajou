@@ -12,7 +12,7 @@ public class Intro : MonoBehaviour
 {
     private bool mousePressed;
     private Vector3 mousePosition;
-    public GameObject BackUI;
+    //public GameObject BackUI;
     public GameObject MenuUI;
     
     void Update()

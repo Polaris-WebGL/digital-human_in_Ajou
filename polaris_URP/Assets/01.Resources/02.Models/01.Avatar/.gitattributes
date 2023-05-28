@@ -1,1 +1,2 @@
+/01.Female/** filter=lfs diff=lfs merge=lfs -text
 /02.Male/** filter=lfs diff=lfs merge=lfs -text
