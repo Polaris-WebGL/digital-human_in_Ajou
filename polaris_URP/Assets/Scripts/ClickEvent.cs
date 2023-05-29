@@ -10,11 +10,9 @@ using UnityEngine.SceneManagement;
 
 public class ClickEvent : MonoBehaviour
 {
-    private bool mousePressed;
+    /*private bool mousePressed;
     private Vector3 mousePosition;
-    public Camera mainCamera;
-    public Camera overCamera;
-    public Camera avatarCamera;
+    
     
     void Update()
     {
@@ -33,83 +31,56 @@ public class ClickEvent : MonoBehaviour
         {
             if (hit.collider.name != null)
             {
-                            if (hit.transform.name == "polySurface29" || hit.transform.name == "polySurface31" || hit.transform.name == "polySurface32" || hit.transform.name == "polySurface33")
-                            {
-                                Debug.Log("desk Hit");
-                                
-                                //책상 뷰로 전환
-                                mainCamera.enabled = false;
-                                overCamera.enabled = true;
-                                //BackUI.SetActive(true);
-                                //MenuUI.SetActive(false);
-                                
-                                if (hit.collider.name == "switch1")
-                                {
-                                    Debug.Log("switch Hit");
-                                    Application.OpenURL("https://50.ajou.ac.kr/");
-                                }
+
+                if (hit.collider.name == "switch1")
+                {
+                    Debug.Log("switch Hit");
+                    Application.OpenURL("https://consult.mncapro.co.kr/solution/ajou/department/index.html");
+                }
                 
-                                else if (hit.collider.name == "map")
-                                {
-                                    Debug.Log("map Hit");
-                                    Application.OpenURL("https://www.ajou.ac.kr/kr/ajou/notice.do");
-                                }
+                else if (hit.collider.name == "map")
+                {
+                    Debug.Log("map Hit");
+                    Application.OpenURL("http://www.iajou.ac.kr/ajouvr.jsp");
+                }
+
+                else if (hit.collider.name == "book1")
+                {
+                    Debug.Log("book1 Hit");
+                    Application.OpenURL("http://www.iajou.ac.kr/main.do");            
+                }
                 
-                                else if (hit.collider.name == "card1")
-                                {
-                                    Debug.Log("card Hit");
-                                    Application.OpenURL("https://www.ajou.ac.kr/kr/ajou/notice.do");
-                                }
-                            
-                                else if (hit.collider.name == "apply1")
-                                {
-                                    Debug.Log("apply Hit");
-                                    Application.OpenURL("./WebSite/ClubList.html");
-                                }
-                            
-                                else if (hit.collider.name == "pamphlet1")
-                                {
-                                    Debug.Log("pamphlet Hit");
-                                
-                                }
-                                
-                                else if (hit.collider.name == "pCube30")
-                                {
-                                    Debug.Log("photo Hit");
-                                
-                                }
-                            }
-                            if (hit.transform.name == "test77")
-                            {
-                                Debug.Log("avatar Hit");
-                                
-                                //아바타 뷰로 전환
-                                mainCamera.enabled = false;
-                                overCamera.enabled = false;
-                                //avatarCamera.enabled = false;
-                                //BackUI.SetActive(true);
-                                //MenuUI.SetActive(false);
-                                
-                            }
+                else if (hit.collider.name == "book3")
+                {
+                    Debug.Log("book3 Hit");
+                    Application.OpenURL("https://www.ajou.ac.kr/oia/index.do");            
+                }
+                
+                else if (hit.collider.name == "book4")
+                {
+                    Debug.Log("book4 Hit");
+                    Application.OpenURL("https://moca.ajou.ac.kr");            
+                }
+                
+                else if (hit.collider.name == "book5")
+                {
+                    Debug.Log("book5 Hit");
+                    Application.OpenURL("https://job.ajou.ac.kr/");            
+                }
+                
+                else if (hit.collider.name == "book6")
+                {
+                    Debug.Log("book6 Hit");
+                    Application.OpenURL("https://www.ajou.ac.kr/iadmissions/index.do");            
+                }
+                
+                else if (hit.collider.name == "book7")
+                {
+                    Debug.Log("book7 Hit");
+                    Application.OpenURL("https://hub.ajou.ac.kr/clientMain/a/t/main.do");            
+                }
             }
 
         }
-    }
-
-    public void OnClickExit()
-    {
-        Debug.Log("Back button Click");
-        mainCamera.enabled = true;
-        overCamera.enabled = false;
-        
-        SceneManager.LoadScene("Room");
-        //MenuUI.SetActive(true);
-    }
-
-    public void OnClickMenu()
-    {
-        Debug.Log("Menu button Click");
-        
-        
-    }
+    }*/
 }

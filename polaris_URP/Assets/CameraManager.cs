@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CameraManager : MonoBehaviour
 {
@@ -16,6 +17,11 @@ public class CameraManager : MonoBehaviour
     GameObject roomUI = null;
     [SerializeField]
     GameObject otherUI = null;
+
+    [SerializeField] 
+    GameObject DialogueUI = null;
+    [SerializeField] 
+    GameObject dialogue = null;
 
     public void clkDesk()
     {
@@ -35,6 +41,7 @@ public class CameraManager : MonoBehaviour
         DigitalHuman.SetActive(true);
         roomUI.SetActive(true);
         otherUI.SetActive(false);
+        DialogueUI.SetActive(false);
     }
     public void clkAvatar()
     {
@@ -43,5 +50,14 @@ public class CameraManager : MonoBehaviour
         avatarCam.enabled = true;
         roomUI.SetActive(false);
         otherUI.SetActive(true);
+        DialogueUI.SetActive(true);
+        if (SceneManager.GetActiveScene().name == "Room_Aseong")
+        {
+            dialogue.GetComponent<randomDialogue_woman>().Start();
+        }
+        else if (SceneManager.GetActiveScene().name == "Room_Garam")
+        {
+            dialogue.GetComponent<randomDialogue_man>().Start();
+        }
     }
 }

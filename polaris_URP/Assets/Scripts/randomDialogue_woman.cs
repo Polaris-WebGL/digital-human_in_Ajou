@@ -22,7 +22,7 @@ public class randomDialogue_woman : MonoBehaviour
 
     private int RandomNum;
     
-    void Start()
+    public void Start()
     {
         RandomNum = Random.Range(0, 9); //0부터 8까지 랜덤하게 발생
         Debug.Log(RandomNum);
