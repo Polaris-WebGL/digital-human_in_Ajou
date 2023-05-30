@@ -12,10 +12,30 @@ function checkbox(){
     return flag;
 }
 
-$(function(){
-   var $clubImage = $('.club_img'),
-       $    
-});
+var first = document.getElementById("first");
+var second = document.getElementById("second");
+var third = document.getElementById("third");
+function firstpage(){
+    if(first.css("display") == "none"){
+        first.show();
+        second.hide();
+        third.hide();
+    }
+}
+function secondpage(){
+    if(second.css("display") == "none") {
+        first.hide();
+        second.show();
+        third.hide();
+    }
+}
+function thirdpage(){
+    if(third.css("display") == "none") {
+        first.hide();
+        second.hide();
+        third.show();
+    }
+}
 
 /*
 $(document).ready(function (){
