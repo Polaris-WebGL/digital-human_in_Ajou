@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/ClubList.css">
+    <title>동아리 목록</title>
+</head>
+<body>
+    <div id="wrapper" class="wrapper">
+        <!--<img src="../img/background.png" alt="배경" class="img bg" id="bg" width="100%" />-->
+
+        <div class="header">
+            <text>동아리 목록</text>
+        </div>
+
+        <section class="filter_type">
+            <text>동아리 유형</text>
+            <select name="type" id="type" type="select" onchange="if(this.value) location.href=(this.value);">
+                <option value="">-선택-</option>
+                <option value="ClubList_all.html">전 체</option>
+                <option value="ClubList_exercise.html">운동</option> <!--태권도, 농구, 야구-->
+                <option value="ClubList_art.html">문화예술</option> <!--마술, 더빙, 연극, 밴드, 스트릿댄스-->
+                <option value="ClubList_volunteer.html">봉사</option> <!--미유미유-->
+            </select>
+        </section>
+
+        <div class="filter_week">
+            <text>활동 요일</text>
+
+            <input type="checkbox" id="전체" name="week" value="전체" checked="checked">
+            <label for="전체"><a href="ClubList_all.html">전 체</a></label>
+            <input type="checkbox" id="월요일" name="week" value="월요일">
+            <label for="월요일"><a href="ClubList.html">월요일</a></label>
+            <input type="checkbox" id="화요일" name="week" value="화요일">
+            <label for="화요일"><a href="ClubList.html">화요일</a></label>
+            <input type="checkbox" id="수요일" name="week" value="수요일">
+            <label for="수요일"><a href="ClubList_wed.html">수요일</a></label>
+            <input type="checkbox" id="목요일" name="week" value="목요일">
+            <label for="목요일"><a href="ClubList.html">목요일</a></label>
+            <input type="checkbox" id="금요일" name="week" value="금요일">
+            <label for="금요일"><a href="ClubList.html">금요일</a></label>
+            <input type="checkbox" id="토요일" name="week" value="토요일">
+            <label for="토요일"><a href="ClubList.html">토요일</a></label>
+            <input type="checkbox" id="일요일" name="week" value="일요일">
+            <label for="일요일"><a href="ClubList.html">일요일</a></label>
+            <input type="checkbox" id="자유" name="week" value="자유">
+            <label for="자유"><a href="ClubList.html">자유</a></label>
+
+            <!--<form action="#" method="get" class="search">
+                <input type="submit" id="검색" value="검색" name="search" onclick="return checkbox()">
+                <label for="검색">
+                    <img src="../img/search.png" width="40" alt="검색">
+                </label>
+            </form>-->
+        </div>
+        <div class="description">
+            <text>*23-1 기준 활동 요일입니다.</text>
+        </div>
+        
+        <div style="height: 40px;"></div>
+        <div class="contentWrap">
+
+            <div id="result" class="section">
+
+                <div class="slideWrap">
+                    <ul class="slideList">
+                        <li>
+                            
+                                <a class="club_content" style="display: flex;">
+                                    <div class="club_exercise" id="club1" style="display: table-column;">
+                                        <img id="club_img" alt="사진" src="../img/taekyondo.jpg">
+                                        <p id="club_intro">태권도 동아리</p>
+                                        <text id="club_name">차오름</text>
+                                        <div style="height: 10px;"></div>
+                                        <div class="content" style="display: flex;">
+                                            <div class="label">활동 내용</div>
+                                            <p id="club_activity">합기도와 주짓수를 함께 진행하는 태권도 동아리</p>
+                                        </div>
+                                        <div class="week" style="display: flex;">
+                                            <div class="label">활동 요일</div>
+                                            <p id="club_week">요일 문의</p>
+                                        </div>
+                                        <div class="sns" style="display: flex;">
+                                            <div class="label">SNS</div>
+                                            <img src="../img/instagram.png" alt="instagram">
+                                            <p id="club_sns_link">@ajou_tkd</p>
+                                        </div>
+                                    </div>
+                                    <div class="club_exercise" id="club2" style="display: table-column;">
+                                        <img id="club_img2" alt="사진" src="../img/basketball.jpg">
+                                        <p id="club_intro2">농구 동아리</p>
+                                        <text id="club_name">ABC</text>
+                                        <div style="height: 10px;"></div>
+                                        <div class="content" style="display: flex;">
+                                            <div class="label">활동 내용</div>
+                                            <p id="club_activity2">교내 ABC배 농구대회, OB/YB 행사, </br>아주체전, 케이아스배 농구대회</p>
+                                        </div>
+                                        <div class="week" style="display: flex;">
+                                            <div class="label">활동 요일</div>
+                                            <p id="club_week2">요일 문의</p>
+                                        </div>
+                                        <div class="sns" style="display: flex;">
+                                            <div class="label">SNS</div>
+                                            <img src="../img/instagram.png" alt="instagram">
+                                            <p id="club_sns_link2">-</p>
+                                        </div>
+                                    </div>
+                                    <div class="club_art" id="club3" style="display: table-column;">
+                                        <img id="club_img3" alt="사진" src="../img/conjurer.jpg">
+                                        <p id="club_intro3">마술 동아리</p>
+                                        <text id="club_name">Conjurer</text>
+                                        <div style="height: 10px;"></div>
+                                        <div class="content" style="display: flex;">
+                                            <div class="label">활동 내용</div>
+                                            <p id="club_activity3">-</p>
+                                        </div>
+                                        <div class="week" style="display: flex;">
+                                            <div class="label">활동 요일</div>
+                                            <p id="club_week3">요일 문의</p>
+                                        </div>
+                                        <div class="sns" style="display: flex;">
+                                            <div class="label">SNS</div>
+                                            <img src="../img/instagram.png" alt="instagram">
+                                            <p id="club_sns_link3">-</p>
+                                        </div>
+                                    </div>
+                                    <label for="slide02" class="right"></label>
+                                </a>
+                        </li>
+                        <li>
+                            <a class="club_content" style="display: flex;">
+                                <label for="slide01" class="left"></label>
+                                    <div class="club_art" id="club4" style="display: table-column;">
+                                        <img id="club_img4" alt="사진" src="../img/ava.jpg">
+                                        <p id="club_intro4">더빙 동아리</p>
+                                        <text id="club_name">A.va</text>
+                                        <div style="height: 10px;"></div>
+                                        <div class="content" style="display: flex;">
+                                            <div class="label">활동 내용</div>
+                                            <p id="club_activity4"><a href="https://youtu.be/U0RQJP2XgZw">link</a></p>
+                                        </div>
+                                        <div class="week" style="display: flex;">
+                                            <div class="label">활동 요일</div>
+                                            <p id="club_week4">요일 문의</p>
+                                        </div>
+                                        <div class="sns" style="display: flex;">
+                                            <div class="label">SNS</div>
+                                            <img src="../img/instagram.png" alt="instagram">
+                                            <p id="club_sns_link4">@ajou_ava</p>
+                                        </div>
+                                    </div>
+                                    <div class="club_art" id="club5" style="display: table-column;">
+                                        <img id="club_img5" alt="사진" src="../img/amont.jpg">
+                                        <p id="club_intro5">연극 동아리</p>
+                                        <text id="club_name">아몽극회</text>
+                                        <div style="height: 10px;"></div>
+                                        <div class="content" style="display: flex;">
+                                            <div class="label">활동 내용</div>
+                                            <p id="club_activity5">-</p>
+                                        </div>
+                                        <div class="week" style="display: flex;">
+                                            <div class="label">활동 요일</div>
+                                            <p id="club_week5">요일 문의</p>
+                                        </div>
+                                        <div class="sns" style="display: flex;">
+                                            <div class="label">SNS</div>
+                                            <img src="../img/instagram.png" alt="instagram">
+                                            <p id="club_sns_link5">@amont_1976</p>
+                                        </div>
+                                    </div>
+                                    <div class="club_exercise" id="club6" style="display: table-column;">
+                                        <img id="club_img6" alt="사진">
+                                        <p id="club_intro6">야구 동아리</p>
+                                        <div style="height: 10px;"></div>
+                                        <text id="club_name">A.va</text>
+                                        <div class="content" style="display: flex;">
+                                            <div class="label">활동 내용</div>
+                                            <p id="club_activity6"><a href="https://www.musinsa.com/cms/specialissue/view/3083">link1</a>
+                                                </br><a href="https://youtu.be/k0kixsAjYSw">link2</a></p>
+                                        </div>
+                                        <div class="week" style="display: flex;">
+                                            <div class="label">활동 요일</div>
+                                            <p id="club_week6">요일 문의</p>
+                                        </div>
+                                        <div class="sns" style="display: flex;">
+                                            <div class="label">SNS</div>
+                                            <img src="../img/instagram.png" alt="instagram">
+                                            <p id="club_sns_link6">@ajou_abba_huskies
+                                            </br> <a href="https://m.blog.naver.com/abba_huskies ">blog</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                <label for="slide03" class="right"></label>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="club_content"  style="display: flex;">
+                                <label for="slide02" class="left"></label>
+                                    <div class="club_volunteer" id="club7" style="display: table-column;">
+                                        <img id="club_img7" alt="사진" src="../img/meyoumeow.png">
+                                        <p id="club_intro7">봉사 동아리</p>
+                                        <text id="club_name">미유미유</text>
+                                        <div style="height: 10px;"></div>
+                                        <div class="content" style="display: flex;">
+                                            <div class="label">활동 내용</div>
+                                            <p id="club_activity7">-</p>
+                                        </div>
+                                        <div class="week" style="display: flex;">
+                                            <div class="label">활동 요일</div>
+                                            <p id="club_week7">요일 문의</p>
+                                        </div>
+                                        <div class="sns" style="display: flex;">
+                                            <div class="label">SNS</div>
+                                            <img src="../img/instagram.png" alt="instagram">
+                                            <p id="club_sns_link7">@ajou.meyoumeow
+                                            </br>facebook: 아주대고양이는미유미유
+                                            </br><a href="https://ajoumeow.luftaquila.io/ ">공식 사이트</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="club_art" id="club8" style="display: table-column;">
+                                        <img id="club_img8" alt="사진" src="../img/capo.jpg">
+                                        <p id="club_intro8">밴드 동아리</p>
+                                        <text id="club_name">CAPO</text>
+                                        <div style="height: 10px;"></div>
+                                        <div class="content" style="display: flex;">
+                                            <div class="label">활동 내용</div>
+                                            <p id="club_activity8">-</p>
+                                        </div>
+                                        <div class="week" style="display: flex;">
+                                            <div class="label">활동 요일</div>
+                                            <p id="club_week8">수요일 18:00-19:00</p>
+                                        </div>
+                                        <div class="sns" style="display: flex;">
+                                            <div class="label">SNS</div>
+                                            <img src="../img/instagram.png" alt="instagram">
+                                            <p id="club_sns_link8">@ajou.capo</br>YOUTUBE: Capo film</p>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="club_art" id="club9" style="display: table-column;">
+                                        <img id="club_img9" alt="사진" src="../img/beat.jpg">
+                                        <p id="club_intro9">스트릿댄스 동아리</p>
+                                        <text id="club_name">BEAT</text>
+                                        <div style="height: 10px;"></div>
+                                        <div class="content" style="display: flex;">
+                                            <div class="label">활동 내용</div>
+                                            <p id="club_activity9">https://youtu.be/2XXiWMSyTRc</p>
+                                        </div>
+                                        <div class="week" style="display: flex;">
+                                            <div class="label">활동 요일</div>
+                                            <p id="club_week9">요일 문의</p>
+                                        </div>
+                                        <div class="sns" style="display: flex;">
+                                            <div class="label">SNS</div>
+                                            <img src="../img/instagram.png" alt="instagram">
+                                            <p id="club_sns_link9">@ajou.beat
+                                            </br>YOUTUBE: 아주대 중앙힙합동아리 B.E.A.T
+                                            </p>
+                                        </div>
+                                    </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <input type="radio" name="slide" id="slide01">
+                <input type="radio" name="slide" id="slide02">
+                <input type="radio" name="slide" id="slide03">
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../js/ClubList.js"></script>
+    <script>
+        window.addEventListener('load', function() {
+            var allElements = document.getElementsByTagName('*');
+            Array.prototype.forEach.call(allElements, function(el) {
+                var includePath = el.dataset.includePath;
+                if (includePath) {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4 && this.status == 200) {
+                            el.outerHTML = this.responseText;
+                        }
+                    };
+                    xhttp.open('GET', includePath, true);
+                    xhttp.send();
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

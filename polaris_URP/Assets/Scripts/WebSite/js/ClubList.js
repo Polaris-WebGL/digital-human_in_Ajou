@@ -12,12 +12,18 @@ function checkbox(){
     return flag;
 }
 
+$(function(){
+   var $clubImage = $('.club_img'),
+       $    
+});
+
+/*
 $(document).ready(function (){
     $("select").click(function(){
         update: function (){
-            /*var data = {
+            /!*var data = {
                 
-            }*/
+            }*!/
             
             $.ajax({
                 url: "/api/v1/posts/",
@@ -96,4 +102,5 @@ $(document).ready(function (){
             });
         }
     });
-});
+});*/
+

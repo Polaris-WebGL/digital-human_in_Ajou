@@ -24,19 +24,19 @@
     padding-left: 15px;
 }
 
-.type{
+.filter_type{
     display: flex;
     margin: 3% 3% 1.5% 3%;
 }
 
-.type text{
+.filter_type text{
     font-size: 22px;
     color: #131313;
     font-weight: bold;
     font-family: 'Pretendard-Regular';
 }
 
-.type select{
+.filter_type select{
     font-family: 'Pretendard-Regular';
     font-size: 22px;
     font-weight: bold;
@@ -57,12 +57,12 @@
     cursor: pointer;
 }
 
-.week{
+.filter_week{
     display: flex;
     margin: 0 3% 0% 3%;
 }
 
-.week text{
+.filter_week text{
     font-size: 22px;
     color: #131313;
     font-weight: bold;
@@ -71,7 +71,7 @@
     margin-right: 18.3px;
 }
 
-.week input + label{
+.filter_week input + label{
     width: 60px;
     height: 27px;
     
@@ -95,16 +95,16 @@
     cursor: pointer;
 }
 
-.week input[type=checkbox]:checked+ label{
+.filter_week input[type=checkbox]:checked+ label{
     background: #0085FF;
     color: #FFFFFF;
 }
 
-.week input{
+.filter_week input{
     display: none;
 }
 
-.week .search label{
+.filter_week .search label{
     border: none;
     margin: 0 -100px 0 40px;
     cursor: pointer;
@@ -150,7 +150,7 @@
 
 
 .slideWrap{
-    height: 600px;
+    
     overflow: hidden;
     position: relative;
     margin: auto;
@@ -181,28 +181,95 @@
     align-items: center;
     text-align: center;
     margin-left: 140px;
+    margin-top: 50px;
 }
 
-.club img{
+.club_art img{
     width:200px;
     height: 200px;
     margin: 30px;
 }
-.club p{
+.club_exercise img{
+    width:200px;
+    height: 200px;
+    margin: 30px;
+}
+.club_volunteer img{
+    width:200px;
+    height: 200px;
+    margin: 30px;
+}
+
+.club_art p{
     width:30px;
     font-size: 20px;
     font-weight: normal;
     color: #131313;
     font-family: 'Pretendard Regular';
+    padding-left: 190px;
 }
-.club text {
+.club_exercise p{
+    width:30px;
+    font-size: 20px;
+    font-weight: normal;
+    color: #131313;
+    font-family: 'Pretendard Regular';
+    padding-left: 190px;
+}
+.club_volunteer p{
+    width:30px;
+    font-size: 20px;
+    font-weight: normal;
+    color: #131313;
+    font-family: 'Pretendard Regular';
+    padding-left: 190px;
+}
+
+.club_art text {
     width:30px;
     font-size: 30px;
     font-weight: bolder;
+    color: #883FFF;
+    font-family: 'Pretendard Regular';
+}
+.club_exercise text {
+    width:30px;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #0057FF;
+    font-family: 'Pretendard Regular';
+}
+.club_volunteer text {
+    width:30px;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #131313;
     font-family: 'Pretendard Regular';
 }
 
-.club .label{
+.club_art .label{
+    width: 50px;
+    height: 20px;
+
+    font-family: 'Pretendard-Regular';
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+
+    outline: 0;
+    color: #FFFFFF;
+    background: #883FFF;
+
+    padding: 6px 20px 4px 20px;
+    margin: auto;
+
+    border-radius: 11px;
+    border-color: #883FFF;
+    border: 3px solid;
+
+    cursor: pointer;
+}
+.club_exercise .label{
     width: 50px;
     height: 20px;
 
@@ -224,58 +291,110 @@
 
     cursor: pointer;
 }
+.club_volunteer .label{
+    width: 50px;
+    height: 20px;
 
-.club .content{
+    font-family: 'Pretendard-Regular';
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+
+    outline: 0;
+    color: #FFFFFF;
+    background: #131313;
+
+    padding: 6px 20px 4px 20px;
+    margin: auto;
+
+    border-radius: 11px;
+    border-color: #0085FF;
+    border: 3px solid;
+
+    cursor: pointer;
+}
+
+.club_art .content{
     justify-content: start;
     padding: 0;
+    margin-left: -50px;
+    width: 500px;
+}
+.club_exercise .content{
+    justify-content: start;
+    padding: 0;
+    margin-left: -50px;
+    width: 500px;
+}
+.club_volunteer .content{
+    justify-content: start;
+    padding: 0;
+    margin-left: -50px;
     width: 500px;
 }
 
-.club .content p{
+li > a .content p{
     font-family: 'Pretendard-Regular';
     font-size: 15px;
     font-weight: normal;
     color: #131313;
     margin: auto;
+    margin-left: -150px;
     justify-content: start;
     padding: 0;
 }
 
-.club .week{
+li > a .week{
     width: 500px;
-    margin-left: -1px;
+    margin-left: -50px;
 }
-.club .week p{
+li > a .week p{
     font-family: 'Pretendard-Regular';
     font-size: 15px;
     font-weight: normal;
     color: #131313;
     margin: auto;
+    margin-left: -150px;
     padding: 0;
 }
 
-.club .sns .label{
+li > a .sns .label{
     margin-right: 20px;
-    margin-left: 93px;
+    margin-left: 125px;
 }
-.club .sns img{
-    width: 5%;
+li > a .sns img{
+    width: 3%;
     height: auto;
     margin: auto;
     padding: 0;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
-.club .sns p{
+li > a .sns p{
     font-family: 'Pretendard-Regular';
     font-size: 15px;
     font-weight: normal;
     color: #131313;
     margin: auto;
+    margin-left: -150px;
     padding: 0;
 }
 
-.club{
+.club_art{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    align-content: center;
+    align-items: center;
+}
+.club_exercise{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    align-content: center;
+    align-items: center;
+}
+.club_volunteer{
     position: relative;
     width: 500px;
     height: 500px;
