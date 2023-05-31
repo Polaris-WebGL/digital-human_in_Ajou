@@ -15,7 +15,8 @@ public class Fade : MonoBehaviour
 
 
     public bool stopIn = false; //false일때 실행되는건데, 초기값을 false로 한 이유는 게임 시작할때 페이드인으로 들어가려고...그게 싫으면 true로 하면됨.
-    public bool stopOut = true;
+    public bool stopOut = false;
+    private bool stopOutchk = false;
 
     void Awake()
     {
@@ -25,7 +26,20 @@ public class Fade : MonoBehaviour
 
     void Start()
     {
-
+       // m_Animator = gameObject.GetComponent<Animator>();
+        //audioData = gameObject.GetComponent<AudioSource>();
+        //Invoke("startAnim", 0.05f);
+        //Invoke("playAudio", 0.05f);
+        Invoke("OnInvoke", 10.5f);
+        
+    }
+    void OnInvoke()
+    {
+        if (stopOut == false)
+        {
+            stopOutchk = true;
+            Debug.Log("Fadeout");
+        }
     }
 
     void Update()
@@ -36,7 +50,7 @@ public class Fade : MonoBehaviour
         {
             PlayFadeIn();
         }
-        if (stopOut == false && time <= 2)
+        if (stopOut == false && time <= 2 && stopOutchk==true)
         {
             PlayFadeOut();
         }

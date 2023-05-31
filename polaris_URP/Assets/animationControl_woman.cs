@@ -12,9 +12,9 @@ public class animationControl_woman : MonoBehaviour
     {
         m_Animator = gameObject.GetComponent<Animator>();
         audioData = gameObject.GetComponent<AudioSource>();
-        Invoke("startAnim", 0.05f);
-        Invoke("playAudio", 0.05f);
-        Invoke("OnInvoke", 11.5f);
+        Invoke("startAnim", 0.1f);
+        Invoke("playAudio", 0.1f);
+        Invoke("OnInvoke", 11.0f);
         //this.GetComponent<Animator>().Play();
     }
     void OnInvoke()
