@@ -14,6 +14,15 @@
     width: 98.3%;
     height: 100%;
     padding: 15px;
+    flex-direction: row;
+}
+
+.header img{
+    position: absolute;
+    width: 2%;
+    height: auto;
+    margin-top: 7px;
+    margin-left: 1600px;
 }
 
 .header text{
@@ -103,7 +112,13 @@
 
 /*.filter_week input[type=checkbox]:checked+ label{
     background: #0085FF;
-    color: #FFFFFF;
+}*/
+
+/*.filter_week .link{
+    background: #0085FF;
+}
+.filter_week .link a{
+    color: white;
 }*/
 
 .filter_week input{
@@ -194,16 +209,19 @@
     height: 250px;
     overflow: hidden;
     margin: 30px;
+    margin-bottom: -10px;
 }
 .club_exercise img{
     width:250px;
     height: 250px;
     margin: 30px;
+    margin-bottom: -10px;
 }
 .club_volunteer img{
     width:250px;
     height: 250px;
     margin: 30px;
+    margin-bottom: -10px;
 }
 
 .club_art p{
@@ -212,6 +230,7 @@
     color: #131313;
     font-family: 'Pretendard Regular';
     padding: 0px;
+    margin-bottom: -1px;
 }
 .club_exercise p{
     font-size: 20px;
@@ -219,6 +238,7 @@
     color: #131313;
     font-family: 'Pretendard Regular';
     padding: 0px;
+    margin-bottom: -1px;
 }
 .club_volunteer p{
     font-size: 20px;
@@ -226,6 +246,7 @@
     color: #131313;
     font-family: 'Pretendard Regular';
     padding: 0px;
+    margin-bottom: -1px;
 }
 
 .club_art text {
