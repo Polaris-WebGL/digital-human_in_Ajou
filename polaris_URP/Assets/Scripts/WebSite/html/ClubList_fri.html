@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/ClubList.css">
+    <title>동아리 목록</title>
+</head>
+<body>
+    <div id="wrapper" class="wrapper">
+        <!--<img src="../img/background.png" alt="배경" class="img bg" id="bg" width="100%" />-->
+
+        <div class="header">
+            <text>동아리 목록</text>
+            <a href="https://www.paran-polaris.co.kr"><img src="../img/close.png"></a>
+        </div>
+        
+        <section class="filter_type">
+            <text>동아리 유형</text>
+            <select name="type" id="type" type="select" onchange="if(this.value) location.href=(this.value);">
+                <option value="">-선택-</option>
+                <option value="ClubList_all.html">전 체</option>
+                <option value="ClubList_exercise.html">운동</option> <!--태권도, 농구, 야구-->
+                <option value="ClubList_art.html">문화예술</option> <!--마술, 더빙, 연극, 밴드, 스트릿댄스-->
+                <option value="ClubList_volunteer.html">봉사</option> <!--미유미유-->
+            </select>
+        </section>
+        
+        <div class="filter_week">
+            <text>활동 요일</text>
+
+            <input type="checkbox" id="전체" name="week" value="전체" onclick='checkOnlyOne(this)'>
+            <label for="전체" onclick="location.href='ClubList_all.html'">전 체</label>
+            <input type="checkbox" id="월요일" name="week" value="월요일" onclick='checkOnlyOne(this)'>
+            <label for="월요일" onclick="location.href='ClubList_mon.html'">월요일</label>
+            <input type="checkbox" id="화요일" name="week" value="화요일" onclick='checkOnlyOne(this)'>
+            <label for="화요일" onclick="location.href='ClubList_tue.html'">화요일</label>
+            <input type="checkbox" id="수요일" name="week" value="수요일" onclick='checkOnlyOne(this)'>
+            <label for="수요일" onclick="location.href='ClubList_wed.html'">수요일</label>
+            <input type="checkbox" id="목요일" name="week" value="목요일" onclick='checkOnlyOne(this)'>
+            <label for="목요일" onclick="location.href='ClubList_thu.html'">목요일</label>
+            <input type="checkbox" id="금요일" name="week" value="금요일" checked="checked" onclick='checkOnlyOne(this)'>
+            <label for="금요일" onclick="location.href='ClubList_fri.html'">금요일</label>
+            <input type="checkbox" id="토요일" name="week" value="토요일" onclick='checkOnlyOne(this)'>
+            <label for="토요일" onclick="location.href='ClubList_sat.html'">토요일</label>
+            <input type="checkbox" id="일요일" name="week" value="일요일" onclick='checkOnlyOne(this)'>
+            <label for="일요일" onclick="location.href='ClubList_sun.html'">일요일</label>
+            <input type="checkbox" id="자유" name="week" value="자유" onclick='checkOnlyOne(this)'>
+            <label for="자유" onclick="location.href='ClubList_free.html'">자유</label>
+            
+            <!--<form action="#" method="get" class="search">
+                <input type="submit" id="검색" value="검색" name="search" onclick="return checkbox()">
+                <label for="검색">
+                    <img src="../img/search.png" width="40" alt="검색">
+                </label>
+            </form>-->
+        </div>
+        <div class="description">
+            <text>*23-1 기준 활동 요일입니다.</text>
+        </div>
+        
+        <div style="height: 40px;"></div>
+        <div class="contentWrap">
+       
+            <div id="result" class="section">
+                
+                <div class="slideWrap">
+                    <ul class="slideList">
+                        <li>
+                            <a>
+                                <div class="club_content" style="display: flex;">
+                                    <div class="club" id="club1" style="display: table-column;">
+                                    </div>
+                                    <div class="club" id="club2" style="display: table-column;">
+                                    </div>
+                                    <div class="club" id="club3" style="display: table-column;">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <div class="club_content" style="display: flex;">
+                                    <div class="club" id="club4" style="display: table-column;">
+                                    </div>
+                                    <div class="club" id="club5" style="display: table-column;">
+                                    </div>
+                                    <div class="club" id="club6" style="display: table-column;">
+                                    </div>
+                                </div>
+                            </a>
+                            
+                        </li>
+                        <li>
+                            <a>
+                                <div class="club_content" style="display: flex;">
+                                    <div class="club" id="club7" style="display: table-column;">
+                                    </div>
+                                    <div class="club" id="club8" style="display: table-column;">
+                                    </div>
+                                    <div class="club" id="club9" style="display: table-column;">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <input type="radio" name="slide" id="slide01">
+                <input type="radio" name="slide" id="slide02">
+                <input type="radio" name="slide" id="slide03">
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../js/ClubList.js"></script>
+    <script>
+        window.addEventListener('load', function() {
+            var allElements = document.getElementsByTagName('*');
+            Array.prototype.forEach.call(allElements, function(el) {
+                var includePath = el.dataset.includePath;
+                if (includePath) {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4 && this.status == 200) {
+                            el.outerHTML = this.responseText;
+                        }
+                    };
+                    xhttp.open('GET', includePath, true);
+                    xhttp.send();
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
