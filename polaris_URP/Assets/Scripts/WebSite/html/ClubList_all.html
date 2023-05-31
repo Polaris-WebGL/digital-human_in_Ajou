@@ -29,24 +29,24 @@
         <div class="filter_week">
             <text>활동 요일</text>
 
-            <input type="checkbox" id="전체" name="week" value="전체" checked="checked">
-            <label for="전체" class="link"><a href="ClubList_all.html">전 체</a></label>
-            <input type="checkbox" id="월요일" name="week" value="월요일">
-            <label for="월요일" class="link"><a href="ClubList.html">월요일</a></label>
-            <input type="checkbox" id="화요일" name="week" value="화요일">
-            <label for="화요일" class="link"><a href="ClubList.html">화요일</a></label>
-            <input type="checkbox" id="수요일" name="week" value="수요일">
-            <label for="수요일" class="link"><a href="ClubList_wed.html">수요일</a></label>
-            <input type="checkbox" id="목요일" name="week" value="목요일">
-            <label for="목요일" class="link"><a href="ClubList.html">목요일</a></label>
-            <input type="checkbox" id="금요일" name="week" value="금요일">
-            <label for="금요일" class="link"><a href="ClubList.html">금요일</a></label>
-            <input type="checkbox" id="토요일" name="week" value="토요일">
-            <label for="토요일" class="link"><a href="ClubList.html">토요일</a></label>
-            <input type="checkbox" id="일요일" name="week" value="일요일">
-            <label for="일요일" class="link"><a href="ClubList.html">일요일</a></label>
-            <input type="checkbox" id="자유" name="week" value="자유">
-            <label for="자유" class="link"><a href="ClubList.html">자유</a></label>
+            <input type="checkbox" id="전체" name="week" value="전체" checked="checked" onclick='checkOnlyOne(this)'>
+            <label for="전체" onclick="location.href='ClubList_all.html'">전 체</label>
+            <input type="checkbox" id="월요일" name="week" value="월요일" onclick='checkOnlyOne(this)'>
+            <label for="월요일" onclick="location.href='ClubList_mon.html'">월요일</label>
+            <input type="checkbox" id="화요일" name="week" value="화요일" onclick='checkOnlyOne(this)'>
+            <label for="화요일" onclick="location.href='ClubList_tue.html'">화요일</label>
+            <input type="checkbox" id="수요일" name="week" value="수요일" onclick='checkOnlyOne(this)'>
+            <label for="수요일" onclick="location.href='ClubList_wed.html'">수요일</label>
+            <input type="checkbox" id="목요일" name="week" value="목요일" onclick='checkOnlyOne(this)'>
+            <label for="목요일" onclick="location.href='ClubList_thu.html'">목요일</label>
+            <input type="checkbox" id="금요일" name="week" value="금요일" onclick='checkOnlyOne(this)'>
+            <label for="금요일" onclick="location.href='ClubList_fri.html'">금요일</label>
+            <input type="checkbox" id="토요일" name="week" value="토요일" onclick='checkOnlyOne(this)'>
+            <label for="토요일" onclick="location.href='ClubList_sat.html'">토요일</label>
+            <input type="checkbox" id="일요일" name="week" value="일요일" onclick='checkOnlyOne(this)'>
+            <label for="일요일" onclick="location.href='ClubList_sun.html'">일요일</label>
+            <input type="checkbox" id="자유" name="week" value="자유" onclick='checkOnlyOne(this)'>
+            <label for="자유" onclick="location.href='ClubList_free.html'">자유</label>
 
             <!--<form action="#" method="get" class="search">
                 <input type="submit" id="검색" value="검색" name="search" onclick="return checkbox()">

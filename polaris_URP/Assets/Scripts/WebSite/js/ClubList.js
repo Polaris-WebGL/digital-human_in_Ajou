@@ -1,22 +1,15 @@
-function checkbox(){
-    var flag = false;
-    var values = document.getElementsByName("week");
-    
-    for(var i=0; i<values.length; i++){
-        if(values[i].checked){
-            alert(values[i].value);
-            //각 value의 내용 출력하는 코드 작성
-        }
-    }
-    
-    return flag;
+function checkOnlyOne(element) {
+
+    const checkboxes
+        = document.getElementsByName("week");
+
+    checkboxes.forEach((cb) => {
+        cb.checked = false;
+    })
+
+    element.checked = true;
 }
 
-var link = document.getElementsByClassName("link");
-
-function link(){
-    
-}
 
 /*var first = document.getElementById("first");
 var second = document.getElementById("second");

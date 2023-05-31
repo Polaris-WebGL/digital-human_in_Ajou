@@ -29,24 +29,24 @@
         <div class="filter_week">
             <text>활동 요일</text>
 
-            <input type="checkbox" id="전체" name="week" value="전체" onclick='checkOnlyOne(this)'>
+            <input type="checkbox" id="전체" name="week" value="전체"  onclick='checkOnlyOne(this)'>
             <label for="전체" onclick="location.href='ClubList_all.html'">전 체</label>
-            <input type="checkbox" id="월요일" name="week" value="월요일" onclick='checkOnlyOne(this)'>
-            <label for="월요일" onclick="location.href='ClubList.html'">월요일</label>
+            <input type="checkbox" id="월요일" name="week" value="월요일" checked="checked" onclick='checkOnlyOne(this)'>
+            <label for="월요일" onclick="location.href='ClubList_mon.html'">월요일</label>
             <input type="checkbox" id="화요일" name="week" value="화요일" onclick='checkOnlyOne(this)'>
-            <label for="화요일" onclick="location.href='ClubList.html'">화요일</label>
+            <label for="화요일" onclick="location.href='ClubList_tue.html'">화요일</label>
             <input type="checkbox" id="수요일" name="week" value="수요일" onclick='checkOnlyOne(this)'>
             <label for="수요일" onclick="location.href='ClubList_wed.html'">수요일</label>
             <input type="checkbox" id="목요일" name="week" value="목요일" onclick='checkOnlyOne(this)'>
-            <label for="목요일" onclick="location.href='ClubList.html'">목요일</label>
+            <label for="목요일" onclick="location.href='ClubList_thu.html'">목요일</label>
             <input type="checkbox" id="금요일" name="week" value="금요일" onclick='checkOnlyOne(this)'>
-            <label for="금요일" onclick="location.href='ClubList.html'">금요일</label>
+            <label for="금요일" onclick="location.href='ClubList_fri.html'">금요일</label>
             <input type="checkbox" id="토요일" name="week" value="토요일" onclick='checkOnlyOne(this)'>
-            <label for="토요일" onclick="location.href='ClubList.html'">토요일</label>
+            <label for="토요일" onclick="location.href='ClubList_sat.html'">토요일</label>
             <input type="checkbox" id="일요일" name="week" value="일요일" onclick='checkOnlyOne(this)'>
-            <label for="일요일" onclick="location.href='ClubList.html'">일요일</label>
+            <label for="일요일" onclick="location.href='ClubList_sun.html'">일요일</label>
             <input type="checkbox" id="자유" name="week" value="자유" onclick='checkOnlyOne(this)'>
-            <label for="자유" onclick="location.href='ClubList.html'">자유</label>
+            <label for="자유" onclick="location.href='ClubList_free.html'">자유</label>
             
             <!--<form action="#" method="get" class="search">
                 <input type="submit" id="검색" value="검색" name="search" onclick="return checkbox()">
@@ -65,34 +65,49 @@
             <div id="result" class="section">
                 
                 <div class="slideWrap">
-                    <div class="club_content" style="display: flex;">
-                        <div class="club_volunteer" id="club7" style="display: table-column;">
-                            <img id="club_img7" alt="사진" src="../img/meyoumeow.png">
-                            <p id="club_intro7">봉사 동아리</p>
-                            <text id="club_name">미유미유</text>
-                            <div style="height: 10px;"></div>
-                            <div class="content" style="display: flex;">
-                                <div class="label" style="margin-right: 215px;">활동 내용</div>
-                                <div><p id="club_activity7"></p></div>
-                            </div>
-                            <div style="height: 5px;"></div>
-                            <div class="week" style="display: flex;">
-                                <div class="label">활동 요일</div>
-                                <div><p id="club_week7">요일 문의</p></div>
-                            </div>
-                            <div style="height: 5px;"></div>
-                            <div class="sns" style="display: flex;">
-                                <div class="label">SNS</div>
-                                <div><p id="club_sns_link7">@ajou.meyoumeow
-                                    </br>facebook: 아주대고양이는미유미유
-                                    </br><a href="https://ajoumeow.luftaquila.io/ ">공식 사이트</a>
-                                </p>
+                    <ul class="slideList">
+                        <li>
+                            <a>
+                                <div class="club_content" style="display: flex;">
+                                    <div class="club" id="club1" style="display: table-column;">
+                                    </div>
+                                    <div class="club" id="club2" style="display: table-column;">
+                                    </div>
+                                    <div class="club" id="club3" style="display: table-column;">
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <div class="club_content" style="display: flex;">
+                                    <div class="club" id="club4" style="display: table-column;">
+                                    </div>
+                                    <div class="club" id="club5" style="display: table-column;">
+                                    </div>
+                                    <div class="club" id="club6" style="display: table-column;">
+                                    </div>
+                                </div>
+                            </a>
+                            
+                        </li>
+                        <li>
+                            <a>
+                                <div class="club_content" style="display: flex;">
+                                    <div class="club" id="club7" style="display: table-column;">
+                                    </div>
+                                    <div class="club" id="club8" style="display: table-column;">
+                                    </div>
+                                    <div class="club" id="club9" style="display: table-column;">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <!--<input type="radio" name="slide" id="slide01">-->
+                <input type="radio" name="slide" id="slide01">
+                <input type="radio" name="slide" id="slide02">
+                <input type="radio" name="slide" id="slide03">
             </div>
         </div>
     </div>

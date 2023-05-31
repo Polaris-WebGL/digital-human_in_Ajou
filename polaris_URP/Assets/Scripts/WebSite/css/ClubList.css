@@ -110,16 +110,10 @@
     cursor: pointer;
 }
 
-/*.filter_week input[type=checkbox]:checked+ label{
+.filter_week input[type=checkbox]:checked+ label{
     background: #0085FF;
-}*/
-
-/*.filter_week .link{
-    background: #0085FF;
-}
-.filter_week .link a{
     color: white;
-}*/
+}
 
 .filter_week input{
     display: none;
