@@ -43,10 +43,24 @@ public class randomAnim : MonoBehaviour
         Dialogue.text = fDialogueArray[RandomNum];
 
         m_Animator.SetBool("startAnim",true);
+        m_Animator.SetBool("pauseAnim", false);
         audioData.clip = audioArr[RandomNum];
+
+        if (RandomNum == 0)
+        {
+            audioData.Play(0);
+        }
+        else if (RandomNum == 1)
+        {
+            Invoke("fstartAudio", 1.6f);
+        }
+        else if (RandomNum == 2)
+        {
+            Invoke("fstartAudio", 0.7f);
+        }
+    }
+    private void fstartAudio()
+    {
         audioData.Play(0);
-
-        m_Animator.SetBool("pauseAnim", true);
-
     }
 }

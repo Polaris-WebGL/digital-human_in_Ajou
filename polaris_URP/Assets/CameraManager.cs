@@ -34,7 +34,8 @@ public class CameraManager : MonoBehaviour
     }
     public void clkBackBut()
     {
-
+        DigitalHuman.GetComponent<Animator>().SetBool("pauseAnim", true);
+        DigitalHuman.GetComponent<Animator>().SetBool("startAnim", false);
         deskCam.enabled = false;
         mainCam.enabled = true;
         avatarCam.enabled = false;
