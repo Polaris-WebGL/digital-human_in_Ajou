@@ -12,7 +12,13 @@ function checkbox(){
     return flag;
 }
 
-var first = document.getElementById("first");
+var link = document.getElementsByClassName("link");
+
+function link(){
+    
+}
+
+/*var first = document.getElementById("first");
 var second = document.getElementById("second");
 var third = document.getElementById("third");
 function firstpage(){
@@ -35,7 +41,7 @@ function thirdpage(){
         second.hide();
         third.show();
     }
-}
+}*/
 
 /*
 $(document).ready(function (){
