@@ -26,6 +26,7 @@ public class OutlineSelection : MonoBehaviour
     private Transform highlight;
     private Transform selection;
     private RaycastHit raycastHit;
+    public Camera mainCam;
 
     void Update()
     {
@@ -35,7 +36,7 @@ public class OutlineSelection : MonoBehaviour
             highlight.gameObject.GetComponent<Outline>().enabled = false;
             highlight = null;
         }
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        Ray ray = mainCam.ScreenPointToRay(Input.mousePosition);
         if (!EventSystem.current.IsPointerOverGameObject() && Physics.Raycast(ray, out raycastHit)) //Make sure you have EventSystem in the hierarchy before using EventSystem
         {
             highlight = raycastHit.transform;
