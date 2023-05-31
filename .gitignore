@@ -70,3 +70,6 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+polaris_URP/Library/ArtifactDB
+polaris_URP/Library/ShaderCache.db
+polaris_URP/Library/SourceAssetDB
