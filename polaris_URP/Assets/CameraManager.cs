@@ -39,6 +39,8 @@ public class CameraManager : MonoBehaviour
         mainCam.enabled = true;
         avatarCam.enabled = false;
         DigitalHuman.SetActive(true);
+        DigitalHuman.GetComponent<Animator>().SetBool("pauseAnim", true);
+        DigitalHuman.GetComponent<Animator>().SetBool("startAnim", false);
         roomUI.SetActive(true);
         otherUI.SetActive(false);
         DialogueUI.SetActive(false);
@@ -51,13 +53,13 @@ public class CameraManager : MonoBehaviour
         roomUI.SetActive(false);
         otherUI.SetActive(true);
         DialogueUI.SetActive(true);
-        if (SceneManager.GetActiveScene().name == "Room_Aseong")
+        /*if (SceneManager.GetActiveScene().name == "Room_Aseong")
         {
             dialogue.GetComponent<randomDialogue_woman>().Start();
         }
         else if (SceneManager.GetActiveScene().name == "Room_Garam")
         {
             dialogue.GetComponent<randomDialogue_man>().Start();
-        }
+        }*/
     }
 }

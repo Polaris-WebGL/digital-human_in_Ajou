@@ -29,7 +29,7 @@ public class PopupManager : MonoBehaviour
 
     public void openLink_apply()
     {
-        Application.OpenURL("paran-polaris.co.kr:8080");
+        Application.OpenURL("http://paran-polaris.co.kr:8080/club");
     }
     public void openLink_switch()
     {

@@ -9,6 +9,7 @@ TagManager:
   - Photo
   - Card
   - Desk
+  - Selectable
   layers:
   - Default
   - TransparentFX

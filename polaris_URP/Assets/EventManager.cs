@@ -18,6 +18,6 @@ public class EventManager : MonoBehaviour
         Play();
         Debug.Log("audio play");
         
-        SceneManager.LoadScene("Intro");
+        SceneManager.LoadScene("Intro_Aseong");
     }
 }
