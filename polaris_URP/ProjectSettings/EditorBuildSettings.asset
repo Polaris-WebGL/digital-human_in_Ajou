@@ -14,10 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/02.Scenes/Intro_Aseong.unity
     guid: 9902ec01739be6345a7f052276736e4b
-  - enabled: 1
+  - enabled: 0
     path: Assets/02.Scenes/Intro_Garam.unity
     guid: e7205fbc34bce9644afca62e98477e2e
-  - enabled: 1
+  - enabled: 0
     path: Assets/02.Scenes/Room_Garam.unity
     guid: 981fb239bb64bf54ca8d9b1ee84e071a
   - enabled: 0

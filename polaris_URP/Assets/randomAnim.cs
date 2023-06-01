@@ -55,10 +55,10 @@ public class randomAnim : MonoBehaviour
             }
             else if (RandomNum == 1)
             {
-                Invoke("playAudio", 1.5f);
+                Invoke("playAudio", 0.8f);
             }else if (RandomNum == 2)
             {
-                Invoke("playAudio", 0.6f);
+                Invoke("playAudio", 0.4f);
             }
         }
         

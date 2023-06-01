@@ -7,13 +7,14 @@ public class animationControl_woman : MonoBehaviour
 {
     AudioSource audioData;
     Animator m_Animator;
+    public GameObject DigitalH;
 
     void Start()
     {
-        m_Animator = gameObject.GetComponent<Animator>();
+        m_Animator = DigitalH.GetComponent<Animator>();
         audioData = gameObject.GetComponent<AudioSource>();
-        Invoke("startAnim", 0.1f);
-        Invoke("playAudio", 0.1f);
+        Invoke("startAnim", 0.4f);
+        audioData.Play(0);
         Invoke("OnInvoke", 11.0f);
         //this.GetComponent<Animator>().Play();
     }
@@ -29,6 +30,7 @@ public class animationControl_woman : MonoBehaviour
     }
     public void startAnim()
     {
-        m_Animator.SetBool("startAnim", true);
+        DigitalH.SetActive(true);
+        //m_Animator.SetBool("startAnim", true);
     }
 }

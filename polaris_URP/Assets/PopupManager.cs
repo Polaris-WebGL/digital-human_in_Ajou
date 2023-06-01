@@ -39,34 +39,57 @@ public class PopupManager : MonoBehaviour
     {
         Application.OpenURL("http://www.iajou.ac.kr/ajouvr.jsp");
     }
-    public void openLink_book1(GameObject obj)
+
+    /*
+     책 팝업 > 사이트 이동
+     */
+    public void openLinkBook(int n)
     {
-        //ClosePopup(obj);
-        Application.OpenURL("http://www.iajou.ac.kr/main.do");            
-    }
-    public void openLink_book3(GameObject obj)
-    {
-        ClosePopup(obj);
-        Application.OpenURL("https://www.ajou.ac.kr/oia/index.do");            
-    }
-    public void openLink_book4(GameObject obj)
-    {
-        ClosePopup(obj);
-        Application.OpenURL("https://moca.ajou.ac.kr");            
-    }
-    public void openLink_book5(GameObject obj)
-    {
-        ClosePopup(obj);
-        Application.OpenURL("https://job.ajou.ac.kr/");            
-    }
-    public void openLink_book6(GameObject obj)
-    {
-        ClosePopup(obj);
-        Application.OpenURL("https://www.ajou.ac.kr/iadmissions/index.do");            
-    }
-    public void openLink_book7(GameObject obj)
-    {
-        ClosePopup(obj);
-        Application.OpenURL("https://hub.ajou.ac.kr/clientMain/a/t/main.do");            
+        string url = "";
+        if(n==11) //중앙도서관
+        {
+            url = "https://library.ajou.ac.kr/#/";
+        }
+        else if(n==12) //MOCA
+        {
+            url = "https://ose.ajou.ac.kr/member/rl/login/loginForm.do";
+        }
+        else if(n==13) //아주Bb
+        {
+            url = "https://eclass2.ajou.ac.kr/ultra/course";
+        }
+        else if(n==21) //아주 허브
+        {
+            url = "https://hub.ajou.ac.kr/clientMain/a/t/main.do";
+        }
+        else if (n == 22) //대학교육혁신원
+        {
+            url = "https://ace.ajou.ac.kr/ace/index.do";
+        }
+        else if (n == 23) //아주심리상담센터
+        {
+            url = "http://apcc1721.ajou.ac.kr/apcc1721/index.jsp";
+        }
+        else if (n == 31) //입학처
+        {
+            url = "http://www.iajou.ac.kr/main.do";
+        }
+        else if (n == 32) //대학일자리+센터
+        {
+            url = "https://job.ajou.ac.kr/main/Default.aspx";
+        }
+        else if (n == 33) //LINK사업단
+        {
+            url = "https://linc.ajou.ac.kr/";
+        }
+        else if (n == 34) //창업지원단
+        {
+            url = "http://changup.ajou.ac.kr/";
+        }
+        else if (n == 35) //산학협력단
+        {
+            url = "http://iacf.ajou.ac.kr/iacf/index.jsp";
+        }
+        Application.OpenURL(url);
     }
 }
