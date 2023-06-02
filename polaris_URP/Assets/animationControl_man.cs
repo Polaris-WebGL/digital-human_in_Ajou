@@ -1,34 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
-
-public class animationControl_man : MonoBehaviour
-{
-    AudioSource audioData;
-    Animator m_Animator;
-
-    void Start()
-    {
-        m_Animator = gameObject.GetComponent<Animator>();
-        audioData = gameObject.GetComponent<AudioSource>();
-        Invoke("startAnim", 0.05f);
-        Invoke("playAudio", 0.05f);
-        Invoke("OnInvoke", 11.5f);
-        //this.GetComponent<Animator>().Play();
-    }
-    void OnInvoke()
-    {
-        Debug.Log("11�� �� Ivoke �ߵ�");
-        SceneManager.LoadScene("Room_Garam");
-    }
-    void playAudio()
-    {
-        audioData.Play(0);
-        Debug.Log("started");
-    }
-    public void startAnim()
-    {
-        m_Animator.SetBool("startAnim", true);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7732c4df84dd64d4f8bd9525238a373d3321cf671ea3fb723f120c68f69047c7
+size 1079
