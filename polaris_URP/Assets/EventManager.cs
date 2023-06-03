@@ -1,23 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
-
-public class EventManager : MonoBehaviour
-{
-    public AudioClip audioClip;
-
-    void Play()
-    {
-        AudioSource audio = GetComponent<AudioSource>();
-        audioClip = audio.clip;
-        audio.PlayOneShot(audioClip, 1.0f);
-    }
-    public void ButtonClick()
-    {
-        Play();
-        Debug.Log("audio play");
-        
-        SceneManager.LoadScene("Intro_Aseong");
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:bcd7424c3bb60a847565c98dbd85d0ef090755ae7844ae2e6f2ea0f813f7a0ad
+size 519
