@@ -1,31 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.Events;
-
-public class ObjectButton : MonoBehaviour
-{
-    [SerializeField]
-    Camera cam = null;
-    public UnityEvent unityEvent = new UnityEvent();
-    public GameObject button;
-    // Start is called before the first frame update
-    void Start()
-    {
-        button = this.gameObject;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
-        if(Input.GetMouseButtonDown(0))
-        {
-            if(Physics.Raycast(ray,out hit)&& hit.collider.gameObject == gameObject)
-            {
-                unityEvent.Invoke();
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:326022e16bc442fbd0e4ddf480c8e6c15796617885b7973108fd70cecd22d55e
+size 1362
