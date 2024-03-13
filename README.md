@@ -1,6 +1,6 @@
 # POLARIS
 ### [DEMO]
-
+🎞️https://drive.google.com/file/d/1w5cy0PiGVt25JoJYmXO3muunfUKyZMhx/view?usp=sharing (서버 기간 만료로 인해 데모영상으로 대체)
 <img src="https://github.com/Polaris-WebGL/digital-human_in_Ajou/assets/80036437/b6237921-6785-4336-a19e-49b6db62813b.png" width=500px />
 <img src="https://github.com/Polaris-WebGL/digital-human_in_Ajou/assets/80036437/beee0a19-e187-4ada-9606-6763088736a5.png" width=500px />
 <img src="https://github.com/Polaris-WebGL/digital-human_in_Ajou/assets/80036437/c12f2c5c-29fb-41b7-bb90-2937d64b2996.png" width=500px />
